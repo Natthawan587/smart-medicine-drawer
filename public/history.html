@@ -8,18 +8,15 @@
 <body>
   <h3 id="doctorName"></h3>
 
-  <div class="patient">
-    <input id="hn" placeholder="กรอก HN เพื่อดูประวัติ">
-    <button onclick="loadHistory()">ค้นหา</button>
-  </div>
+  <input id="hn" placeholder="กรอก HN">
+  <button onclick="loadHistory()">ค้นหา</button>
 
   <input id="searchHistory" placeholder="ค้นหายา..." oninput="filterHistory()">
 
   <div id="historyContainer"></div>
 
-  <a href="/order">กลับไปหน้า Order</a>
+  <a href="/order">กลับ</a>
 
 <script src="history.js"></script>
 </body>
 </html>
-

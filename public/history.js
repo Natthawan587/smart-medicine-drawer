@@ -32,10 +32,12 @@ function updateHistoryCards(history) {
   });
 }
 
-// ค้นหาใน History
 function filterHistory() {
   const query = document.getElementById("searchHistory").value.toLowerCase();
   document.querySelectorAll(".history-card").forEach(card => {
-    card.style.display = card.textContent.toLowerCase().includes(query) ? "flex" : "none";
+    card.style.display = card.textContent.toLowerCase().includes(query)
+      ? "flex"
+      : "none";
   });
 }
+

@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>Order</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Order</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h3 id="doctorName"></h3>
 
-  <div class="patient">
-    <input id="patient" placeholder="ชื่อผู้ป่วย">
-    <input id="hn" placeholder="HN">
-  </div>
+<h3 id="doctorName"></h3>
 
-  <div>
-    <input id="searchDrug" placeholder="ค้นหายา..." oninput="filterDrugs()">
-  </div>
+<div class="patient">
+  <input id="patientInput" placeholder="ชื่อผู้ป่วย">
+  <input id="hnInput" placeholder="HN">
+</div>
 
-  <div class="grid" id="drugGrid">
-    <div class="drug">Paracetamol <input type="number" min="0"></div>
-    <div class="drug">Ibuprofen <input type="number" min="0"></div>
-    <div class="drug">Amlodipine <input type="number" min="0"></div>
-    <div class="drug">Cetirizine <input type="number" min="0"></div>
+<div>
+  <input id="searchDrug" placeholder="ค้นหายา..." oninput="filterDrugs()">
+</div>
 
-    <div class="drug">Metformin <input type="number" min="0"></div>
-    <div class="drug">Omeprazole <input type="number" min="0"></div>
-    <div class="drug">Losartan <input type="number" min="0"></div>
-    <div class="drug">Simvastatin <input type="number" min="0"></div>
+<div class="grid" id="drugGrid">
+  <div class="drug">Paracetamol <input type="number" min="0"></div>
+  <div class="drug">Ibuprofen <input type="number" min="0"></div>
+  <div class="drug">Amlodipine <input type="number" min="0"></div>
+  <div class="drug">Cetirizine <input type="number" min="0"></div>
+  <div class="drug">Metformin <input type="number" min="0"></div>
+  <div class="drug">Omeprazole <input type="number" min="0"></div>
+  <div class="drug">Losartan <input type="number" min="0"></div>
+  <div class="drug">Simvastatin <input type="number" min="0"></div>
+  <div class="drug">Aspirin <input type="number" min="0"></div>
+  <div class="drug">Diclofenac <input type="number" min="0"></div>
+  <div class="drug">Amoxicillin <input type="number" min="0"></div>
+  <div class="drug">Vitamin C <input type="number" min="0"></div>
+  <div class="drug">Tolperisone <input type="number" min="0"></div>
+  <div class="drug">Betahistine <input type="number" min="0"></div>
+  <div class="drug">Domperidone <input type="number" min="0"></div>
+  <div class="drug">Folic Acid <input type="number" min="0"></div>
+</div>
 
-    <div class="drug">Aspirin <input type="number" min="0"></div>
-    <div class="drug">Diclofenac <input type="number" min="0"></div>
-    <div class="drug">Amoxicillin <input type="number" min="0"></div>
-    <div class="drug">Vitamin C <input type="number" min="0"></div>
-
-    <div class="drug">Tolperisone <input type="number" min="0"></div>
-    <div class="drug">Betahistine <input type="number" min="0"></div>
-    <div class="drug">Domperidone <input type="number" min="0"></div>
-    <div class="drug">Folic Acid <input type="number" min="0"></div>
-  </div>
-
-  <button onclick="sendOrder()">ส่งใบสั่งยา</button>
-  <a href="/history">ดูประวัติการจ่ายยา</a>
+<button onclick="sendOrder()">ส่งใบสั่งยา</button>
+<a href="/history">ดูประวัติการจ่ายยา</a>
 
 <script src="script.js"></script>
 </body>
 </html>
+
